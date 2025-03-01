@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#project">Projects</a>
+            <a href="#about-me">About Us</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+        <div class="info">
+            <p><span id="hello-txt">HELLO</span> <br> THIS IS <span class="name">ROHAN</span> AND <br> I AM A FULL STACK
+            <br> WEB DEVELOPER</p>
+        </div>
+    </div>
+
+    <!-- project section -->
+    <div id="project">
+        <h1>Projects</h1>
+        <div class="project-images">
+            <div class="images">
+                <a href="../Weather/index.html"><img src="images/2025-02-09 (1).png"><p>Weather</p></a>
+                <a href="../Travel page/index.html"><img src="images/2025-02-09 (4).png"><p>Travel</p></a>
+                <a href="../Music Player/index.html"><img src="images/2025-02-09 (3).png"><p>Music Player</p></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me -->
+     <section id="about-me">
+        <h1>About Us</h1>
+        <div class="about-info">
+            <div class="about">
+                <h3>My name is <span class="name">ROHAN</span></h3>
+            <P>I am a crearive designer, <br> full stack developer, <br>
+            freelancer and youtuber</P>
+            <button><a href="images/x.png" download="">DOWNLOAD CV</a></button>
+            </div>
+            <div class="media">
+                <a href=""><img src="images/facebook.png"></a>
+                <a href=""><img src="images/x-twitter.jpg"></a>
+                <a href=""><img src="images/linkedin.png"></a>
+                <a href=""><img src="images/instagram.png"></a>
+            </div>
+        </div>
+     </section>
+
+     <!-- Contact us -->
+      <section id="contact-us">
+        <h1>Contact Us</h1>
+        <form action="/" method="POST">
+            <label for="name">Enter your Full Name</label>
+            <input type="text" name="name" required>
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" required>
+            <label for="message">Enter your message</label>
+            <textarea id="message" name="message"></textarea>
+            <button id="send">Send</button>
+        </form>
+      </section>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    height: 775px;
+    background-color: rgb(17, 15, 15);
+    border-bottom: 1px solid gray;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(17, 15, 15);
+    z-index: 5;
+}
+
+.navbar a {
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+.navbar a:hover {
+    color: darkorange;
+    border-bottom: 2px solid darkorange;
+}
+
+.info {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    border-bottom: 4px solid darkorange;
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#hello-txt {
+    color: darkorange;
+}
+
+.name {
+    animation-name: name_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name_animation {
+    from {
+        color: red
+    }
+
+    to {
+        color: darkorange
+    }
+}
+
+/* project section */
+#project {
+    height: 775px;
+    padding: 70px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(17, 15, 15);
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+.project-images {
+    margin-top: 100px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.images a {
+    cursor: default;
+}
+
+.images a img {
+    height: 230px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px gray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.images a img:hover {
+    transform: scale(1.03);
+    animation: border-animation 0.9s infinite;
+}
+
+@keyframes border-animation {
+    25% {
+        border-bottom: 3px solid darkorange;
+    }
+
+    50% {
+        border-right: 3px solid darkorange;
+    }
+
+    75% {
+        border-top: 3px solid darkorange;
+    }
+
+    100% {
+        border-left: 3px solid darkorange;
+    }
+}
+
+/* about section  */
+#about-me {
+    height: 775px;
+    padding: 70px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(17, 15, 15);
+    color: white;
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+
+.about-info {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    font-size: 40px;
+    display: flex;
+}
+
+.about p {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.about button {
+    background-color: darkorange;
+    color: rgb(17, 15, 15);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.about button:hover {
+    color: darkorange;
+    background-color: rgb(67, 65, 65);
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 25px;
+}
+
+.media a img {
+    height: 40px;
+    border-radius: 10px;
+}
+
+/* contact section */
+#contact-us {
+    height: 775px;
+    padding: 70px;
+    background-color: rgb(17, 15, 15);
+    color: white;
+}
+
+#contact-us h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+form {
+    margin: auto;
+    margin-top: 70px;
+    padding: 50px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 5px;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px darkorange;
+}
+
+form input,
+#message,
+#send {
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#message {
+    height: 130px;
+    text-align: start;
+}
+
+#send {
+    width: 40%;
+    font-size: 20px;
+    padding: 0px;
+    cursor: pointer;
+    margin: auto;
+}
+
+#send:hover {
+    background-color: gray;
+    transition: all 0.3s ease-in;
+}
